@@ -19,3 +19,11 @@ df[numeric_features] = scaler.fit_transform(df[numeric_features])
 
 # Show the first few rows of the preprocessed data
 print(df.head(3))  # printing 3 rows instead of default 5
+
+```More actions
+
+Changes made:
+
+1. Used `MinMaxScaler` instead of `StandardScaler` for feature scaling.
+2. Used `df.drop` without `inplace=True` and assigned the result back to `df`.
+3. Printed 3 rows instead of the default 5 using `print(df.head(3))`.
